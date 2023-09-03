@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureWondersTV Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 p-4">
+  
+  
+  <header>
+    <nav class="p-8">
+      <div class="navbar-center justify-center flex">
+        <div class="flex">
+          <img src="./Images/NatureWondersTV.jpg" class="w-12" alt="" />
+          <a class="btn btn-warning normal-case text-xl" href="https://natureworderstv-aditto.netlify.app/">
+            NatureWondersTV
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+  
+  
+  
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded shadow-md">
+        <h1 class="text-3xl font-semibold mb-4">JavaScript Concepts and REST API</h1>
+        
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Scope of Variables:</h2>
+            <p class="mb-4">
+                In JavaScript, variable scope determines the visibility and accessibility of variables. There are three types of variable scopes:
+                <ul class="list-disc pl-6">
+                    <li><span class="font-bold text-blue-500">var</span>: Variables declared with <span class="font-bold text-blue-500">var</span> have function-level scope. They are hoisted to the top of the function or global scope.</li>
+                    <li><span class="font-bold text-blue-500">let</span>: Variables declared with <span class="font-bold text-blue-500">let</span> have block-level scope, making them accessible only within the block they are defined in.</li>
+                    <li><span class="font-bold text-blue-500">const</span>: Variables declared with <span class="font-bold text-blue-500">const</span> also have block-level scope but cannot be reassigned after initialization.</li>
+                </ul>
+                It's recommended to use <span class="font-bold text-blue-500">let</span> and <span class="font-bold text-blue-500">const</span> over <span class="font-bold text-blue-500">var</span> in modern JavaScript.
+            </p>
+        </section>
+        
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Use Cases of null and undefined:</h2>
+            <p class="mb-4">
+                <span class="font-bold text-blue-500">null</span> and <span class="font-bold text-blue-500">undefined</span> are used to represent missing or absent values in JavaScript.
+                <ul class="list-disc pl-6">
+                    <li><span class="font-bold text-blue-500">null</span>: It explicitly represents the absence of any object value or a variable that intentionally has no value. It is often used to indicate that a variable should be empty or has no value.</li>
+                    <li><span class="font-bold text-blue-500">undefined</span>: It represents a variable that has been declared but has not been assigned a value. It can also be explicitly set to indicate a variable's unavailability.</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section>
+            <h2 class="text-xl font-semibold mb-2">REST API:</h2>
+            <p>
+                REST API (Representational State Transfer) is an architectural style for designing networked applications. It is based on a set of principles that enable stateless communication between client and server over HTTP.
+                <br>
+                Key principles of REST include:
+                <ul class="list-disc pl-6">
+                    <li>Using standard HTTP methods (GET, POST, PUT, DELETE) for CRUD (Create, Read, Update, Delete) operations on resources.</li>
+                    <li>Representing resources as nouns in the URL structure (e.g., <span class="font-bold text-blue-500">/users</span> for a user resource).</li>
+                    <li>Using HTTP status codes to indicate the outcome of API requests (e.g., 200 for success, 404 for not found).</li>
+                </ul>
+                REST APIs are widely used for building web services, allowing different software systems to communicate over the internet in a simple and scalable manner.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

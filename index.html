@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NatureWondersTV</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="">
+    <header class="bg-[#BBC6C8;] pb-10 rounded">
+      <nav class="p-8">
+        <div class="navbar flex max-sm:flex-col">
+          <div class="navbar-start">
+            <img src="./Images/NatureWondersTV.jpg" class="w-10" alt="" />
+            <a
+              class="btn btn-warning normal-case text-xl"
+              href="hhttps://natureworderstv-aditto.netlify.app/"
+              >NatureWondersTV</a
+            >
+          </div>
+          <div class="navbar-center lg:flex">
+            <button class="btn btn-info btn-sort-by-view max-sm:my-8">
+              Sort By View
+            </button>
+          </div>
+          <div class="navbar-end max-sm:flex max-sm:justify-center">
+            <a class="btn btn-success" href="blog.html" target="_blank">Blog</a>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </nav>
+      <ul class="flex space-x-4 justify-center">
+        <li class="">
+          <a
+            href="#"
+            class="category-tab btn btn-outline btn-error font-black"
+            id="all-btn"
+            data-category-id="1000"
+            >All</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="category-tab btn btn-outline btn-error font-black"
+            id="music-btn"
+            data-category-id="1001"
+            >Music</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="category-tab btn btn-outline btn-error font-black"
+            id="comedy-btn"
+            data-category-id="1003"
+            >Comedy</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="category-tab btn btn-outline btn-error font-black"
+            id="drawing-btn"
+            data-category-id="1005"
+            >Drawing</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main
+      class="grid grid-cols-1 w-3/4 mx-auto md:grid-cols-2 lg:grid-cols-4 gap-6 py-20"
+      id="main-content"
+    ></main>
+
+    <img
+      id="error-image"
+      src="./Images/Icon.png"
+      alt="Error"
+      class="hidden mx-auto"
+    />
+    <p id="error-message" class="hidden text-center text-red-600 text-xl mb-10">
+      Oops!! Sorry, There is no content here
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
